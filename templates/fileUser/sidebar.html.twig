@@ -1,0 +1,56 @@
+<div class="wrapper d-flex align-items-stretch">
+	<nav id="sidebar">
+		<div class="custom-menu">
+			<button type="button" id="sidebarCollapse" class="btn btn-primary">
+				<i class="fa fa-bars"></i>
+				<span class="sr-only">Toggle</span>
+			</button>
+		</div>
+		<div class="p-4">
+			<span>user interface</span></a>
+			<div class="user-panel mt-h pb-3 mb-3 d-flex">
+				<div class="image">
+					<img src="" class="img-circle elevation-2" alt="User Image">
+				</div>
+				<div class="info">
+					<a href="#" class="d-block"> User name </a>
+				</div>
+			</div>
+			<ul class="list-unstyled components mb-3">
+				<li class="{{ (isPhoto) ? "active" : ""}}"><a href={{ path("photo") }}><span
+							class="fa fa-picture-o mr-3" style="color:#fff;">
+						</span>Mes photos</a></li>
+				<li class="{{ (isAlbum) ? "active" : ""}}"><a href={{ path("album") }}><span
+							class="fa fa-picture-o mr-3" style="color:#fff;">
+						</span>mon album</a></li>
+				<li class="{{ (isFavoris) ? "active" : ""}}"><a href={{ path("favoris") }}><span
+							class="fa fa-picture-o mr-3" style="color:#fff;">
+						</span>mon livre photo</a></li>
+				<li class="{{ (isLivre) ? "active" : ""}}"><a href={{ path("livrephoto") }}><span
+							class="fa fa-picture-o mr-3" style="color:#fff;">
+						</span>Mes projets</a></li>
+				<li>
+					<a href="#"><span class=" mr-3"></span></a>
+				<li>
+					<a href="#"><span class=" mr-3"></span> </a>
+				</li>
+				<li>
+					<a href="#"><span class=" mr-3"></span> </a>
+				</li>
+				<li>
+					<a href="#"><span class=" mr-3"></span> </a>
+				</li>
+				<li>
+					<a href="#"><span class=" mr-3"></span> </a>
+				</li>
+				<li>
+					<a href="#"><span class=" mr-3"></span> </a>
+				</li>
+				</li>
+			</ul>
+
+
+
+
+		</div>
+	</nav>

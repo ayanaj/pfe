@@ -1,0 +1,90 @@
+{% block title %} {% endblock %}
+{% block stylesheets %}
+{% include "account/StyleSheetLogin.html.twig" %}
+{% endblock %}
+
+{% block body %}
+
+<div class="cd-popup login" role="alert">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form name="loginform" id="loginform" class="login100-form validate-form"
+                action="{{ path('account_login') }}" method="post">
+                
+                <span class="login100-form-title p-b-48">
+                    <img src="/images/icons/user.png" style="height: 100px; padding-bottom: 1px;" />
+                </span>
+
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" name="nom" id="nom" required>
+                    <span class="focus-input100" data-placeholder="Nom"></span>
+
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" name="prenom" id="prenom" required>
+                    <span class="focus-input100" data-placeholder="prenom"></span>
+
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="number" name="phone" id="téléphone" required>
+                    <span class="focus-input100" data-placeholder="Téléphone"></span>
+
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="Date" name="datr" id="date" required>
+                    <span class="focus-input100" data-placeholder=""></span>
+
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
+                    <input class="input100" type="text" name="_username" id="email" required>
+                    <span class="focus-input100" data-placeholder="Email"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Enter password">
+                    <span class="btn-show-pass">
+                        <i class="zmdi zmdi-eye"></i>
+                    </span>
+                    <input class="input100" type="password" name="_password" id="password" required>
+                    <span class="focus-input100" data-placeholder="Password"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Enter password">
+                    <span class="btn-show-pass">
+                        <i class="zmdi zmdi-eye"></i>
+                    </span>
+                    <input class="input100" type="password" name="_password" id="password" required>
+                    <span class="focus-input100" data-placeholder="Comfirmer le mot de passe"></span>
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn" class="text-black h2 mb-0">
+                            Enregistrer
+                        </button>
+                    </div>
+                </div>
+
+                <div class="text-center p-t-115">
+                    <span class="txt1">
+                        Vous avez déjà un compte?
+                    </span>
+
+                    <a class="txt2" href="{{path("account_login")}}">
+                        Se connecter à un compte existant
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+{% include "account/ScriptsLogin.html.twig" %}
+{% endblock %}

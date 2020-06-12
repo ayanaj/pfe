@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{% block title %}Albumphoto WebSite{% endblock %}</title>
+  {% block stylesheets %}
+{% include "fichiersView/StyleSheets.html.twig" %}
+  {% endblock %}
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  {% block footer %}
+  {% include "fichiersView/Footer.html.twig" %}
+  {% endblock %}
+  {% block menu %}
+  {% include "fichiersView/navbar.html.twig" %}
+  {% endblock %}
+  {% block body %}{% endblock %}
+
+  {% block javascripts %}
+  {% include "fichiersView/Scripts.html.twig" %}
+  {% endblock %}
+
+</body>
+
+</html>
